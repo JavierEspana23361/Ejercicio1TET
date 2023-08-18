@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class DatosI {
-
+    FibonacciValidation FibonacciValidation = new FibonacciValidation();
     public static ArrayList<String> datosw() {
         ArrayList<String> addingdata = new ArrayList<>();
         addingdata.add(word);
@@ -26,6 +26,11 @@ public class DatosI {
         }
         System.out.println("Ingrese su presupuesto máximo en dólares: ");
         int pmax = scanner.nextInt();
+        System.out.println("De poseer una ¿Desea ingresar una contraseña exclusiva? (si/no) ");
+        String sino = scanner.nextLine();
+        if(sino == "Si" || sino == "si" || sino == "Sí" || sino == "sí"){
+            FibonacciValidation.fvalidation();
+        }
     }
 
     
