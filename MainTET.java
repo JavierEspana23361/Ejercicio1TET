@@ -11,17 +11,8 @@ public class MainTET {
         System.out.println("¡Bienvenido/a al sistema de compra de tickets para The Eras Tour: by Tylor Swift!");
 
         //Pedir datos
-        System.out.println("Ingrese el path del archivo");
-		String path = in.nextLine();
-		ArrayList<String> datosguardar = DatosI.datosw();
+        DatosI.datosw();
 				
-		FilesManager.writeFiles(path, datosguardar);
-				
-		System.out.println("Guardado exitosamente");
-
-        //Mando a llamar a FilesManager 
-		ArrayList<String> todoslosDatos = FilesManager.readFiles(path);
-        System.out.println(todoslosDatos);
 
         //CompValid.validar();
     }
