@@ -5,8 +5,10 @@ public class DatosI {
     private int ctickets;
     private int pmax;
     private String nombre;
-    private int email;
+    private String email;
 
+
+    //String pm = Integer.toString(pmax);
     public void datosw(){
 
         
@@ -27,9 +29,23 @@ public class DatosI {
 
         System.out.println("Ingrese su presupuesto máximo en dólares: ");
         pmax = scanner.nextInt();
-
         
+    }
 
+    public String getnombre(){
+        return nombre;
+    }
+
+    public String getemail(){
+        return email;
+    }
+
+    public int getTickets(){
+        return ctickets;
+    }
+
+    public int getPmax(){
+        return pmax;
     }
 
 }
