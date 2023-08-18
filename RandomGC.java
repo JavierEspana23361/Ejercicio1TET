@@ -1,9 +1,9 @@
 import java.util.*;
 
 public class RandomGC {
+    public boolean apto = false;
     public void rgenandcompare(){
         Random random = new Random();
-        boolean apto = false;
         int numP = random.nextInt(15000) + 1;
         int numA = random.nextInt(15000) + 1;
         int numB = random.nextInt(15000) + 1;
@@ -22,5 +22,8 @@ public class RandomGC {
                 apto = true;
             }
         }
+    }
+    public boolean Apto() {
+        return apto;
     }
 }
