@@ -1,7 +1,17 @@
 import java.util.*;
 
 public class DatosI {
+
+    public static ArrayList<String> datosw() {
+        ArrayList<String> addingdata = new ArrayList<>();
+        addingdata.add(word);
+
+        
+        return addingdata;
+    }
+
     public void datosI() {
+
         Scanner scanner = new Scanner(System.in);
         System.out.println("Para iniciar el proceso de compra de tickets debe introducir los siguientes datos: ");
         System.out.println("Ingrese su nombre: ");
@@ -17,4 +27,6 @@ public class DatosI {
         System.out.println("Ingrese su presupuesto máximo en dólares: ");
         int pmax = scanner.nextInt();
     }
+
+    
 }
