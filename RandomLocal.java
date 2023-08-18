@@ -1,6 +1,8 @@
+import java.io.FileReader;
 import java.util.*;
 
 public class RandomLocal {
+    CSVReader csvReader = new CSVReader(new FileReader(locales));
     public void rlocalgen(){
         Random random = new Random();
         int local = random.nextInt(3);
