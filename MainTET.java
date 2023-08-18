@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class MainTET {
@@ -12,8 +11,6 @@ public class MainTET {
 
         //Pedir datos
         DatosI.datosw();
-				
-
-        //CompValid.validar();
+        CompValid.validar();
     }
 }

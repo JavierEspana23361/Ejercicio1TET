@@ -6,25 +6,43 @@ public class RandomLocal {
     private int voletos2 = 20;
     private int voletos3 = 20;
 
-    public int localgen(int tickets){
+    public int[] localgen(int tickets){
         int local = random.nextInt(3);
         if(local == 0){
-            int voletosR = voletos1;
+            int[] localv = new int[2];
+            localv[1] = 100*tickets;
+            if(tickets > voletos1){
+                localv[1] = 100*voletos1;
+            }
+            localv[0] = voletos1;
             voletos1 = voletos1 - tickets;
-            return voletosR;
+            return localv;
             
         }
         else if(local == 1){
-            int voletosR = voletos2;
+            int[] localv = new int[2];
+            localv[1] = 500*tickets;
+            if(tickets > voletos2){
+                localv[1] = 100*voletos2;
+            }
+            localv[0] = voletos2;
             voletos2 = voletos2 - tickets;
-            return voletosR;
+            return localv;
         }
         else if(local ==2){
-           int voletosR = voletos3;
-           voletos3 = voletos3 - tickets;
-           return voletosR;
+            int[] localv = new int[2];
+            localv[1] = 1000*tickets;
+            if(tickets > voletos3){
+                localv[1] = 100*voletos3;
+            }
+            localv[0] = voletos3;
+            voletos3 = voletos3 - tickets;
+            return localv;
         }else{
-            return local;
+            int[] localv = new int[2];
+            localv[1] = 404;
+            localv[0] = 404;
+            return localv;
         }
         
     }
