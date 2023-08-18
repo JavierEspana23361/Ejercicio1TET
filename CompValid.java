@@ -2,7 +2,7 @@ public class CompValid {
     public void validar(){
         RandomGC RandomGC = new RandomGC();
         RandomGC.rgenandcompare();
-        RandomLocal RandomLocal = new RandomLocal();   
+          
         if(RandomGC.Apto() == true){
             RandomLocal locales = new RandomLocal();
             int disponibilidad = locales.localgen();
