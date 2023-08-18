@@ -7,13 +7,12 @@ public class MainTET {
         DatosI DatosI = new DatosI(); //En DatosI están se pide el nombre, el email, la cantidad de tickets y el presupuesto.
         CompValid CompValid = new CompValid(); //Aquí se valida si se puede proceder a la compra de los tickets o no.
         System.out.println("¡Bienvenido/a al sistema de compra de tickets para The Eras Tour: by Tylor Swift!");
-        DatosI.datosI();
         System.out.println("Ingrese el path del archivo");
 		String path = in.nextLine();
 				
 		//Mando a llamar a FilesManager 
 		ArrayList<String> todoslosDatos = FilesManager.readFiles(path);
-		ArrayList<String> datosguardar = DatosI.datosw(todoslosDatos);
+		ArrayList<String> datosguardar = DatosI.datosw();
 				
 		System.out.println("Texto analizado, escriba la ruta en donde desea guardar el resultado");
 		path = in.nextLine();

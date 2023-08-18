@@ -1,23 +1,18 @@
 import java.util.*;
 
 public class DatosI {
-    FibonacciValidation FibonacciValidation = new FibonacciValidation();
+
     public static ArrayList<String> datosw() {
         ArrayList<String> addingdata = new ArrayList<>();
-        addingdata.add(word);
-
         
-        return addingdata;
-    }
-
-    public void datosI() {
-
         Scanner scanner = new Scanner(System.in);
         System.out.println("Para iniciar el proceso de compra de tickets debe introducir los siguientes datos: ");
         System.out.println("Ingrese su nombre: ");
         String nombre = scanner.nextLine();
+        addingdata.add(nombre);
         System.out.println("Ingrese su email: ");
         String email = scanner.nextLine();
+        addingdata.add(email);
         System.out.println("Ingrese la cantidad de tickets que desea comprar (mínimo 1 ticket, máximo 6): ");
         int ctickets = scanner.nextInt();
         if(ctickets < 1 || ctickets > 6){
@@ -25,13 +20,10 @@ public class DatosI {
             ctickets = scanner.nextInt();
         }
         System.out.println("Ingrese su presupuesto máximo en dólares: ");
-        int pmax = scanner.nextInt();
-        System.out.println("De poseer una ¿Desea ingresar una contraseña exclusiva? (si/no) ");
-        String sino = scanner.nextLine();
-        if(sino == "Si" || sino == "si" || sino == "Sí" || sino == "sí"){
-            FibonacciValidation.fvalidation();
-        }
+        String pmax = scanner.nextLine();
+        addingdata.add(pmax);
+        
+        return addingdata;
     }
 
-    
 }
