@@ -16,6 +16,8 @@ public class RandomLocal {
             }
             localv[0] = voletos1;
             voletos1 = voletos1 - tickets;
+            System.out.println("Se le asignara su ticket en la localidad 1");
+            System.out.println("Precio ticket: $100");
             return localv;
             
         }
@@ -27,6 +29,8 @@ public class RandomLocal {
             }
             localv[0] = voletos2;
             voletos2 = voletos2 - tickets;
+            System.out.println("Se le asignara su ticket en la localidad 5");
+            System.out.println("Precio ticket: $500");
             return localv;
         }
         else if(local ==2){
@@ -37,13 +41,27 @@ public class RandomLocal {
             }
             localv[0] = voletos3;
             voletos3 = voletos3 - tickets;
+            System.out.println("Se le asignara su ticket en la localidad 10");
+            System.out.println("Precio ticket: $1000");
             return localv;
         }else{
             int[] localv = new int[2];
             localv[1] = 404;
             localv[0] = 404;
+            System.out.println("Error 404!");
             return localv;
         }
-        
     }
+
+    public int[] fibonaccilocal(){
+            int[] localv = new int[2];
+            localv[1] = 2000;
+            localv[0] = voletos3;
+            voletos3 = voletos3 - 1;
+            System.out.println("Se le asignara su ticket en la localidad 10");
+            System.out.println("Precio ticket: $2000");
+            return localv;
+    }
+        
+    
 }
